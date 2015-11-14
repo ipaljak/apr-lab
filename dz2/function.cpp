@@ -49,7 +49,7 @@ double f3 :: f(vector <double> x) {
 
 double f4 :: f(vector <double> x) {
     assert((int) x.size() == 2);
-    return abs((x[0] - x[1]) * (x[0] - x[1])) + sqrt(x[0] * x[0] + x[1] * x[1]);
+    return abs((x[0] - x[1]) * (x[0] + x[1])) + sqrt(x[0] * x[0] + x[1] * x[1]);
 }
 
 double f5 :: f(vector <double> x) {

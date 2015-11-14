@@ -196,7 +196,7 @@ vector <double> nelder_mead_simplex(vector <double> &x0, vector <double> &dx, do
     
     printf("Nelder-Mead simplex method:\n");
 
-    while (!done(X, f)) {
+    while (!done(X, f) && f.get_calls() <= 1000) {
        
         int h = get_worst(X, f);
         int l = get_best(X, f);
